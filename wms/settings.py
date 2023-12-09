@@ -91,7 +91,7 @@ DATABASES = {
         'PASSWORD': 'EcBFa4da4BeADeg11D6CA*ba4b6fDC*6',
         'HOST': 'viaduct.proxy.rlwy.net',
         'PORT': '37097',
-        
+         
 
     }
 }
