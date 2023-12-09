@@ -148,7 +148,7 @@ MEDIA_ROOT = BASE_DIR / "media"
 # settings.py
 
 STATICFILES_DIRS = [
-    BASE_DIR / "warehouse/static",
+    BASE_DIR / "staticfiles",
     # Add more paths if needed
 ]
 
