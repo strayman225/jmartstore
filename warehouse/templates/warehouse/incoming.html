@@ -9,14 +9,17 @@
 <hr>
 <div style="margin-top:10pxl;margin-left:20%;margin-right:20%;">
 
-$('form').submit(function(){
-    $(this).find("button[type='submit']").prop('disable',true);
-    });
-    
 <form action="" method="post">
     {% csrf_token %}
     {{ form | crispy }}
-    <input type="submit">
+    <input type="submit"
+        $(document).ready(function () {
+    $("#yourFormId").submit(function () {
+        $(".submitBtn").attr("disabled", true);
+        return true;
+    });
+});
+        >
 
 
 </form>
