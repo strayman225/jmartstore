@@ -12,14 +12,7 @@
 <form action="" method="post">
     {% csrf_token %}
     {{ form | crispy }}
-    <input type="submit"
-        $(document).ready(function () {
-    $("#yourFormId").submit(function () {
-        $(".submitBtn").attr("disabled", true);
-        return true;
-    });
-});
-        >
+    <input type="submit">
 
 
 </form>
