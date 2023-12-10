@@ -141,9 +141,8 @@ MEDIA_ROOT = BASE_DIR / "media"
 # settings.py
 
 STATICFILES_DIRS = [
-    BASE_DIR / "staticfiles",
-
-    # Add more paths if needed
+  os.path.join(BASE_DIR,"static"),
+    
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
