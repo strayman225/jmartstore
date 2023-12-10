@@ -33,7 +33,7 @@ INSTALLED_APPS = [
     'warehouse',
     'crispy_forms',
     'crispy_bootstrap5',     
-    'whitenoise.runserver_nostatic',  
+ 
 
 ]
 
@@ -49,7 +49,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     "django.middleware.security.SecurityMiddleware",
-    "whitenoise.middleware.WhiteNoiseMiddleware",
+
 ]
 
 ROOT_URLCONF = 'wms.urls'
@@ -147,6 +147,6 @@ STATICFILES_DIRS = [
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_STORAGE="whitenoise.storage.CompressedManifestStaticFilesStorage"
+
 
 CSRF_TRUSTED_ORIGINS = ['https://jmartstore-production.up.railway.app']
