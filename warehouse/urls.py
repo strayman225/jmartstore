@@ -14,4 +14,4 @@ urlpatterns = [
     path('list/', record_list , name='list_html'),
     path('summary/', summary_list, name='summary_html'),
     path('itemhistory/<str:pk>', single_record_list, name='single_list'),
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)Select text to change formatting, add headers, or create links.
+] 
