@@ -8,7 +8,11 @@
 <h3>Incoming Form</h3>
 <hr>
 <div style="margin-top:10pxl;margin-left:20%;margin-right:20%;">
+var butt = document.getElementById('butt');
 
+butt.addEventListener('click', function(event) {
+    event.target.disabled = true;
+});
 <form action="" method="post">
     {% csrf_token %}
     {{ form | crispy }}
